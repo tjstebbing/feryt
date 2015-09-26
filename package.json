@@ -1,0 +1,27 @@
+{
+  "name": "feryt",
+  "version": "1.0.0",
+  "description": "Feryts out DOM nodes and asserts facts about them.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pomke/feryt.git"
+  },
+  "keywords": [
+    "testing",
+    "browser",
+    "html",
+    "dom"
+  ],
+  "author": "Pomke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pomke/feryt/issues"
+  },
+  "homepage": "https://github.com/pomke/feryt#readme",
+  "dependencies": {
+  }
+}

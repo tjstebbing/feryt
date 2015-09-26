@@ -1,0 +1,25 @@
+////////////// Test ////////////
+
+s = "<div>"+
+"    <div class='list'>"+
+"        <div class='item'>abc</div>"+
+"        <div class='item'>abc</div>"+
+"        <div class='item'>abc</div>"+
+"        <div class='item'>abc</div>"+
+"    </div>"+
+"    <img src='http://google.com/logo.png'/>"+
+"    <input type='checkbox' checked></input>"+
+"</div>";
+
+jsdom = require('jsdom');
+document = jsdom.jsdom(s);
+
+
+feryt(document).find('.list .item').count(4).each(function(n) {
+    n.content('abc').classes(['item' ], ['itemf']);
+});
+
+feryt(document).findOne('img').attr({src : 'http://google.com/logo.png'});
+
+feryt(document).findOne('div').findOne('div.list');
+
