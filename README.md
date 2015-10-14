@@ -22,7 +22,7 @@ In browser simply pass the document object to feryt and start asseting facts:
 
 ```js
 // 1) page has a div element with a foo class
-// 2) which within which are 4 ul elements
+// 2) within which are 4 ul elements
 
 feryt(document).findOne('div.foo').find('ul').count(4);
 
